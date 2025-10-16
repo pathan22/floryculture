@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csp project</title>
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">FLORI CULTURE</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="abstract.html">abstract</a></li>
+          <li><a href="#">servey photos</a></li>
+          <li><a href="#">servey data</a></li>
+          <li><a href="team.html">team member</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <!-- <section class="hero-section"> -->
+      
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+    margin: 0;
+    padding: 40px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+  }
+
+  /* Gallery container */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;         
+    gap: 20px;               
+    justify-content: center; 
+  }
+
+  /* Individual photo card */
+  .gallery img {
+    width: 260px;            /* photo size */
+    height: 180px;
+    object-fit: cover;       /* crop nicely */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect */
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,255,255,0.3);
+  }
+</style>
+</head>
+<body>
+
+<h2>📸 Survey Photos — Floriculture Project</h2>
+
+<div class="gallery">
+  <img src="photos/servay1.png" alt="Survey Photo 1">
+  <img src="photos/servay2.png" alt="Survey Photo 2">
+  <img src="photos/servay3.png" alt="Survey Photo 3">
+  <img src="photos/servay4.png" alt="Survey Photo 4">
+  <img src="photos/servay5.png" alt="Survey Photo 5">
+  
+</div>
+
+</body>
+</html>
+
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
